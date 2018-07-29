@@ -4,7 +4,12 @@
   <title>Marta Pérez</title>
   <meta charset="UTF-8">
   <meta name="description" content="Pagina web de la maestra Marta Pérez">
-  <!-- for web responsive-->
+
+  <!-- Define keywords for search engines -->
+  <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+  <meta name="author" content="Pablo Cabrera">
+
+  <!-- for web responsive, visible area of a web page-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
@@ -17,12 +22,13 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <link rel="icon" type="image/jpg" href="../imagenes/chupete1.png" sizes="64x64" />
+  <link rel="icon" type="image/jpg" href="../imagenes/hand-icon.jpg" sizes="64x64" />
   <link rel="stylesheet" href="../styles/homeStyle.css">
+  <link rel="stylesheet" href="../styles/menu.css">
 </head>
 <body background="../imagenes/fondo-web-simetria-infantil.gif">
 
-		<div class="title-cabecera">
+	<div class="title-cabecera">
 		<h3>
 			Educadora Infantil
 		</h3>
@@ -31,55 +37,133 @@
 		</h1>
 	</div>
 		
-	<div>	
+	<div class="page">
 		
 		<div class="lateral-menu">
+
+
+		<nav>
+			<menu>
+				<menuitem>
+					<a href="./inicio.html">Inicio</a>
+				</menuitem>
+
+				<menuitem class="drop">
+					<a class="drophover" href="sobreMi.html">Sobre Mí</a>
+						<div class="hover-content">
+							<a href="#">Imagenes</a>
+						</div>
+				</menuitem>
+
+				<menuitem class="drop">
+					<a class="drophover" href="./experiencia.html">Experiencias</a>
+						<div class="hover-content">
+							<a href="#">Estados Unidos</a>
+							<a href="#">Erasmus</a>
+							<a href="#">Imagenes</a>
+						</div>
+				</menuitem>
+
+				<menuitem>
+					<a href="./competencias-habilidadades.html">Competencias/Habilidades</a>
+				</menuitem>
+
+				<menuitem class="drop">
+					<a class="drophover" href="./edudacion.html">Educación</a>
+						<div class="hover-content">
+							<a href="#">Literatura Infantil</a>
+							<a href="#">Materiales</a>
+						</div>
+				</menuitem>
+
+				<menuitem>
+					<a>Contacto</a>
+				</menuitem>
+			</menu>
+		</nav>
+		<!--
 			<ul>
-				<li><a href="./webProject.html">  Inicio</a></li>
+				<li><a href="">  Inicio</a></li>
 				<li><a href="./inicio.html">  Sobre Mí</a></li>
 				<li><a href="">  Experiencia</a></li>
 				<li><a href="">  Competencias/Habilidades</a></li>
 				<li><a href="">  Educación</a></li>
 				<li><a href="">  Contacto</a></li>
 			</ul>
+		-->
 		</div>
 		
 		
 		<div class="content" >
-			<h3> Sobre Mi</h3>
-			<img style="margin-left:135px" alt="Marta Pérez" src="../imagenes/sobreMi.png"></img><br>
+
+			<div class="img-M">
+				<img alt="Marta Pérez" src="../imagenes/Marta.png"><br>
+				<!--<span class="pie-imagen">
+					Marta Pérez Arellano<br>
+					Grado en Educación Infantil
+				</span>-->
+			</div>
+
+
+			
+			<!-- mirar de ponerle al parrafo un borde y no dentro de una caja -->
+			<div class="boxes">
+				<div class="box box1">
+					<h4>
+						Sobre Mi
+					</h4>
+					<p>
+						Mi nombre es Marta Pérez y soy Graduada en Educación Infantil por la 
+						Universidad Autónoma de Barcelona en 2017. Accedí a la universidad 
+						por medio del Bachillerato científico y posteriormente la PAU (prueba de acceso a la universidad).
+						<br><br><a  href="./inicio.html">Leer más</a>
+					</p>
+				</div>
+				
+				<div class="box box2">
+					<h4>
+						Experiencia
+					</h4>
+					<p>
+						Entre mis experiencias como maestra de Educación Infantil, se encuentran las diferentes 
+						estancias de prácticas realizadas y una estancia de Erasmus en Noruega con la que pude aprender 
+						cómo es ser maestra desde otro punto de vista.
+						<br><br><a  href="">Más detalles</a>
+					</p>
+				</div>
+				
+				<div class="box box3">
+					<h4>
+						Competencias & Habilidades
+					</h4>
+					<p>
+						El trabajo en equipo, la organización, la comunicación y el pensamiento crítico
+						son algunas de mis habilidades y competencias. Me gusta mucho el mundo científico
+						y de las matemáticas.
+						<br><br><a  href="">Saber más</a>
+					</p>
+				</div>
+				
+				<div class="box box4">
+					<h4>
+						Contacto
+					</h4>
+					<p>
+						<br><br><br><br><br><br><br><br>
+						 <br><a  href="">Contactar</a>
+					</p>
+				</div>
+			</div>
+
 		</div>
-		
-		<p style="text-align:left; margin-left:250px">
-			Mi Educación...<br>
-			
-			EDUCACIÓN INFANTIL Y PRIMARIA:<br>
 
-			C.P. VORAMAR ALICANTE (1998-2007).<br>
-
-			EDUCACIÓN SECUNDARIA OBLIGATORIA:<br>
-
-			I.E.S. CABO DE LA HUERTA (2007-2011)<br>
-
-			BACHILLERAT0:<br>
-
-			Bachillerato científico.<br>
-
-			I.E.S. CABO DE LA HUERTA (2011-2013).<br>
-
-			GRADO EN EDUACCIÓN INFANTIL:<br>
-
-			UAB, UUNIVERSIDAD AUTÓNOMA DE BARCELONA (2013-2017)<br>
-
-			QUEEN MAUD UNIVERSITY COLLEGE IN TRONDHEIM, NORWAY (2017, ERASMUS).<br>
-
-			Finalización de los estudios: 9 de junio de 2017<br>
-			
-		</p>
-		
 	</div>
-			
-			
+	
+	
+	<address>
+		Created by Pablo Cabrera, all rights reserved
+	</address>
+	<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Pablo Cabrera</div>
 	
 	
 </body>

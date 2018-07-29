@@ -1,0 +1,18 @@
+.content{
+	background-color: white;
+}
+.title{
+	
+}
+.title h3{
+	color: #2eb82e;
+	font: normal normal bold 39px/1.4em Signika,sans-serif;
+}
+.subtitle p{
+	float: right;
+	padding-top: 20px;
+	padding-right: 30px;
+	font-family:sacramento,cursive;
+	color: #FF8282;
+	font-size: 23px;
+}

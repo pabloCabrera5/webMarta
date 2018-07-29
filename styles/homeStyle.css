@@ -1,17 +1,17 @@
 h1 {
-	font-family: Helvetica, Geneva, Arial,
+  font-family: Helvetica, Geneva, Arial,
         SunSans-Regular, sans-serif;
-	font-size: 60px;
-	padding: 0;
-	margin: 0;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
 }
 h3 {
-	font-family: Helvetica, Geneva, Arial,
+  font-family: Helvetica, Geneva, Arial,
         SunSans-Regular, sans-serif;
-	font-size: 30px;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}		
+  font-size: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}   
 .title-cabecera {
   padding-top: 1em;
   font-family: Georgia, "Times New Roman",
@@ -19,14 +19,16 @@ h3 {
   color: purple;
   text-align: center;
 }
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .lateral-menu {
-  list-style-type: none;
-  position: absolute;
+  flex: 10%;
   padding-top: 3px;
   margin-top: 5px;
   left: 1em;
-  width: auto;
 }
 .lateral-menu ul li {
   background: white;
@@ -39,9 +41,22 @@ h3 {
 }
 
 .content{
-	padding-top: 20px;
-	text-align: center;
+  flex: 70%;
+  padding-top: 7px;
+  margin-top: 7px;
+  padding-left: 7px;
 }
+
+.img-M{
+    padding-left: 250px;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .img-M{
+        padding-left: 0px;
+    }
+}
+
 .pie-imagen{
  line-height:normal;
  font-size:16px;
@@ -56,11 +71,78 @@ h3 {
 .boxes{
 /*margin: 0 0 25px;
 overflow: hidden;*/
-padding: 20px;
-margin: 15px;
-padding-left: 150px;
-
+position: relative;
+padding: 5px;
+margin: 3px;
+display: flex;
+flex-wrap: wrap;
 }
+
+
+.box{
+color: white;
+border: 1px solid #afcde3;
+padding: 5px;
+width: 20%;
+height: 270px;
+margin-left: 3px;
+}
+
+@media screen and (max-width: 400px) {
+    .box{
+        display: block;
+        width: 95%;
+    }
+}
+.box h4{
+text-align:left;
+padding-left: 10px;
+margin-bottom: 1px;
+}
+.box p{
+  color: black;
+text-align: left;
+padding-left: 10px;
+padding-top: 10px;
+}
+.box p a{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 7px;
+  
+}
+
+.box1{
+  background-color: deepSkyBlue;
+}
+.box2{
+  background-color: lightPink;
+}
+.box3{
+  background-color: mediumSeaGreen;
+}
+.box4{
+  background-color: crimson;
+}
+
+ 
+.box a:link {
+  color: blue;
+}
+.box a:visited {
+  color: purple; 
+}
+address {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: thin dotted 
+}
+
+
+
+
+
+
 
 .pepe{
     width: 20%;
@@ -68,7 +150,7 @@ padding-left: 150px;
     padding: 25px;
     margin: 25px;
     height: 200px;
-	display: inline-block;
+  display: inline-block;
 }
 .pepe h4{
 text-align:left;
@@ -79,49 +161,4 @@ margin-bottom: 1px;
 text-align: left;
 padding-left: 10px;
 padding-top: 10px;
-}
-
-.box{
-color: white;
-border: 1px solid #afcde3;
-padding: 5px;
-width: 20%;
-display: inline-block;
-height: 250px;
-}
-.box h4{
-text-align:left;
-padding-left: 10px;
-margin-bottom: 1px;
-}
-.box p{
-text-align: left;
-padding-left: 10px;
-padding-top: 10px;
-}
-
-.box1{
-	background-color: deepSkyBlue;
-}
-.box2{
-	background-color: lightPink;
-}
-.box3{
-	background-color: mediumSeaGreen;
-}
-.box4{
-	background-color: crimson;
-}
-
- 
-a:link {
-  color: blue;
-}
-a:visited {
-  color: purple; 
-}
-address {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: thin dotted 
 }
