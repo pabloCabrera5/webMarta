@@ -32,3 +32,41 @@
 	text-align: center;
 	font-size: 2vw;
 }
+
+.comp1{
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background-color: lightgreen;
+}
+.comp1 ul li {
+	font-weight: bold;
+	line-height: 1.5em;
+	font: italic bold 14px/1.7em "Times New Roman", Times, serif;
+}
+
+.comp2{
+	/*border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;*/
+	background-color: lightskyblue;
+	//border-radius: 50px;
+}
+
+
+.comp3{
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background-color: coral;
+}
+.comp3 > p{
+	margin: 0px 30px;
+	margin-top: 30px;
+	line-height: 1.9em;
+	font-family: "Times New Roman", Times, serif;
+	font-variant: small-caps;
+}
+.comp3 > p > a {
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+}
